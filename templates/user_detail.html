@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}{{ user.name }}{% endblock %}
+
+{% block content %}
+<div class="text-center mb-5">
+  <h1 class="text-warning">{{ user.name }}</h1>
+  <p class="lead">@{{ user.username }} • {{ user.email }}</p>
+  <p>{{ user.company.name }} • {{ user.address.city }}</p>
+</div>
+
+<h3 class="text-warning">Their Posts ({{ posts|length }})</h3>
+<div class="row">
+  {% for post in posts %}
+  <div class="col-md-6 mb-3">
+    <div class="card">
+      <div class="card-body">
+        <h6><a href="/post/{{ post.id }}" class="text-primary">{{ post.title }}</a></h6>
+        <p>{{ post.body[:100] }}...</p>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{% endblock %}

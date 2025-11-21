@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block title %}Home - Jeep Social{% endblock %}
+{% block content %}
+<div class="text-center py-5">
+  <h1 class="display-3 text-warning fw-bold">🛞 Welcome to Jeep Social</h1>
+  <p class="lead text-light mt-4">The #1 community for Custom Jeep Off-Road Enthusiasts</p>
+  <hr class="border-secondary">
+  <div class="row mt-5">
+    <div class="col-md-4">
+      <div class="card text-white">
+        <div class="card-body text-center">
+          <h2>📸</h2>
+          <h5>Share Your Build</h5>
+          <p>Post photos and stories of your Rig</p>
+          <a href="/new" class="btn btn-primary">Create Post</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card text-white">
+        <div class="card-body text-center">
+          <h2>💬</h2>
+          <h5>Connect & Comment</h5>
+          <p>Like, comment, and jeep wave with the community</p>
+          <a href="/posts" class="btn btn-primary">View Feed</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card text-white">
+        <div class="card-body text-center">
+          <h2>👥</h2>
+          <h5>Meet Members</h5>
+          <p>Browse profiles and follow fellow off-roaders</p>
+          <a href="/users" class="btn btn-primary">See Members</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

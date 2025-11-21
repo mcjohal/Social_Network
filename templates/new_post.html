@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}New Post{% endblock %}
+
+{% block content %}
+<div class="row">
+  <div class="col-md-8 mx-auto">
+    <h1 class="text-warning mb-4">✍️ Share Your Jeep Story</h1>
+    <form method="POST">
+      <div class="mb-3">
+        <label class="form-label text-light">Title (e.g., "My 2024 Rubicon on 37s")</label>
+        <input type="text" name="title" class="form-control" required>
+      </div>
+      <div class="mb-3">
+        <label class="form-label text-light">Tell us about your build/adventure</label>
+        <textarea name="body" class="form-control" rows="8" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary btn-lg">Post to Feed 🚙</button>
+      <a href="/posts" class="btn btn-secondary btn-lg ms-2">Cancel</a>
+    </form>
+  </div>
+</div>
+{% endblock %}
