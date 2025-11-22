@@ -3,12 +3,12 @@
 
 {% block content %}
 <div class="text-center mb-5">
-  <h1 class="text-warning">{{ user.name }}</h1>
+  <h1 class="text-primary">{{ user.name }}</h1>
   <p class="lead">@{{ user.username }} • {{ user.email }}</p>
   <p>{{ user.company.name }} • {{ user.address.city }}</p>
 </div>
 
-<h3 class="text-warning">Their Posts ({{ posts|length }})</h3>
+<h3 class="text-primary">Their Posts ({{ posts|length }})</h3>
 <div class="row">
   {% for post in posts %}
   <div class="col-md-6 mb-3">

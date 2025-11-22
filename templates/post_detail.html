@@ -6,13 +6,13 @@
   <div class="col-lg-8 mx-auto">
     <div class="card mb-4">
       <div class="card-body">
-        <h2 class="text-warning">{{ post.title }}</h2>
+        <h2 class="text-primary">{{ post.title }}</h2>
         <p class="text-light">{{ post.body }}</p>
         <small class="text-muted">By User {{ post.userId }}</small>
       </div>
     </div>
 
-    <h4 class="text-warning mb-3">💬 Comments ({{ comments|length }})</h4>
+    <h4 class="text-primary mb-3">💬 Comments ({{ comments|length }})</h4>
     {% for comment in comments %}
     <div class="card mb-3">
       <div class="card-body">
